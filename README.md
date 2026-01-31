@@ -17,7 +17,7 @@ Spring Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) app
 Java 17 or later is required for the build, and the application can run with Java 17 or newer.
 
 You first need to clone the project locally:
-
+.
 ```bash
 git clone https://github.com/spring-projects/spring-petclinic.git
 cd spring-petclinic
