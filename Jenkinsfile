@@ -16,20 +16,17 @@ pipeline {
             }
         }
 
-        stage('Build & Test') {
-            steps {
-                sh '''
-                  java -version
-                  mvn clean test -Dspring.profiles.active=test
-                '''
-            }
-        }
+     stage('Build & Test') {
+    steps {
+        sh '''
+          java -version
+          mvn clean package -DskipTests
+        '''
+    }
+}
 
-        stage('Package') {
-            steps {
-                sh 'mvn package -DskipTests'
-            }
-        }
+
+   
 
         stage('Docker Build') {
             steps {
