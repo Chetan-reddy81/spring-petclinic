@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        PATH = "${JAVA_HOME}/bin:${env.PATH}"
+        //PATH = "${JAVA_HOME}/bin:${env.PATH}"
         IMAGE_NAME = 'petclinic'
     }
 
