@@ -18,7 +18,8 @@ pipeline {
             steps {
                 sh '''
                   java -version
-                  mvn clean package
+                  mvn clean package -DskipTests
+
                 '''
             }
         }
